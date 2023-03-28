@@ -1,0 +1,25 @@
+{
+  "name": "reservation-system",
+  "version": "1.0.0",
+  "description": "A reservation system for Hilton Restaurants",
+  "author": "Zhang Yong <34384792@qq.com>",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "prepare-husky": "husky install",
+    "pre-commit": "echo \"no pre-commit action\""
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.0",
+    "prettier": "2.8.4",
+    "typescript": "^4.9.3"
+  }
+}

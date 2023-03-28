@@ -1,0 +1,4 @@
+packages:
+  - 'packages/*'
+  - 'ressys-api/**'
+  - 'ressys-app/**'

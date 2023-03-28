@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  resssys_mongodb:
+    container_name: ressys_mongodb_container
+    image: mongo:latest
+    restart: always
+    # TODO: remove this for production
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongodata:/data/db
+    networks:
+      - ressys_network
+  ressys_api:
+    container_name: ressys_api_container
+    restart: unless-stopped
+    build:
+      context: .
+      target: ressys_api
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:3000
+    environment:
+      PORT: 3000
+      SECRET_KEY: this_is_a_secret_key_for_jwt_authentication
+      MONGO_URL: mongodb://resssys_mongodb:27017/ressys
+    networks:
+      - ressys_network
+    depends_on:
+      - resssys_mongodb
+
+  ressys_app:
+    container_name: ressys_app_container
+    build:
+      context: .
+      target: ressys_app
+      dockerfile: ./Dockerfile
+    ports:
+      - 4000:3000
+    environment:
+      PORT: 3000
+      GRAPHQL_URL: http://localhost:3000
+    depends_on:
+      - ressys_api
+networks:
+  ressys_network:
+    driver: bridge

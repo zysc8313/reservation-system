@@ -1,0 +1,8 @@
+# Compiled & generated output
+dist
+
+# Cache
+/.cache
+
+# Misc
+/.husky

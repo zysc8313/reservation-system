@@ -1,0 +1,22 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": [
+    "asynciterable",
+    "Codegen",
+    "commitlint",
+    "compl",
+    "envalid",
+    "envars",
+    "localforage",
+    "notistack",
+    "npmmirror",
+    "pino",
+    "ressys",
+    "Zhang"
+  ]
+}

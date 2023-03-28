@@ -1,0 +1,27 @@
+# Cache
+.cache
+
+# Dependency directories
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# dotenv environment variables file
+.env
+.env.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+
+dist
+mongodata
+
+# Mac
+.DS_Store
