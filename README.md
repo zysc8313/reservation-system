@@ -8,8 +8,8 @@ It's a `Monorepo` style project, with `PNPM` managing workspaces, `SWC` compilin
 `├──`[`ressys-api/`](./ressys-api) - GraphQL API with JWT authentication for the reservation system.<br>
 `├──`[`ressys-app/`](./ressys-app) - Frontend react app for the reservation system.<br>
 `├──`[`Dockerfile`](./Dockerfile) - Dockerfile is used to build the project images.<br>
-`├──`[`docker-compose.yml`](./docker-compose.yml) - Running the project in Docker<br>
-`└──`[`pnpm-workspace.yaml`](./pnpm-workspace.yaml) - PNPM workspace file<br>
+`├──`[`docker-compose.yml`](./docker-compose.yml) - Running the project in Docker.<br>
+`└──`[`pnpm-workspace.yaml`](./pnpm-workspace.yaml) - PNPM workspace file.<br>
 
 ## Tech Stack
 
@@ -34,5 +34,5 @@ The system presets 3 users for testing:
 | User               | Password | Role  |
 | ------------------ | -------- | ----- |
 | jane.doe@user1.com | 111111   | -     |
-| jane.doe@user1.com | 111111   | -     |
+| jane.doe@user2.com | 111111   | -     |
 | jane.doe@admin.com | 111111   | admin |
